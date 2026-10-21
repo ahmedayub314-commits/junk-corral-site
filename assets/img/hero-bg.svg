@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 760" width="1600" height="760" preserveAspectRatio="xMidYMid slice">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0"   stop-color="#CFE3F0"/>
+    <stop offset=".55" stop-color="#E8F0F2"/>
+    <stop offset="1"   stop-color="#F6F4ED"/>
+  </linearGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#DCE0DC"/>
+    <stop offset="1" stop-color="#C9CFC9"/>
+  </linearGradient>
+  <radialGradient id="warm" cx="52%" cy="48%" r="42%">
+    <stop offset="0" stop-color="#FFE9C2" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#FFE9C2" stop-opacity="0"/>
+  </radialGradient>
+  <style>
+    .far  { fill:#B9CAD8; }
+    .near { fill:#9DB2C4; }
+    .rig-dark  { fill:#15181A; }
+    .rig-rib   { stroke:#2E3438; stroke-width:4; fill:none; }
+    .rig-glass { fill:#7FA3B8; opacity:.75; }
+    .rig-tyre  { fill:#111416; }
+    .rig-rim   { fill:#5A6166; }
+    .rig-load  { fill:#2BBE6C; }
+  </style>
+</defs>
+
+<rect width="1600" height="760" fill="url(#sky)"/>
+<rect width="1600" height="760" fill="url(#warm)"/>
+
+<!-- distant skyline, hazy -->
+<g opacity=".45"><rect class="far" x="240" y="327" width="70" height="239" rx="2"/><rect class="far" x="328" y="355" width="70" height="211" rx="2"/><rect class="far" x="413" y="423" width="48" height="143" rx="2"/><rect class="far" x="474" y="267" width="84" height="299" rx="2"/><rect class="far" x="504" y="255" width="24" height="14"/><rect class="far" x="568" y="447" width="48" height="119" rx="2"/><rect class="far" x="636" y="318" width="38" height="248" rx="2"/><rect class="far" x="687" y="304" width="84" height="262" rx="2"/><rect class="far" x="724" y="292" width="10" height="14"/><rect class="far" x="790" y="454" width="84" height="112" rx="2"/><rect class="far" x="824" y="442" width="16" height="14"/><rect class="far" x="894" y="317" width="48" height="249" rx="2"/><rect class="far" x="912" y="305" width="13" height="14"/><rect class="far" x="953" y="319" width="70" height="247" rx="2"/><rect class="far" x="1037" y="307" width="48" height="259" rx="2"/><rect class="far" x="1056" y="295" width="10" height="14"/><rect class="far" x="1101" y="353" width="38" height="213" rx="2"/><rect class="far" x="1151" y="449" width="84" height="117" rx="2"/><rect class="far" x="1246" y="339" width="48" height="227" rx="2"/><rect class="far" x="1265" y="327" width="10" height="14"/><rect class="far" x="1309" y="368" width="38" height="198" rx="2"/><rect class="far" x="1323" y="356" width="11" height="14"/><rect class="far" x="1359" y="466" width="38" height="100" rx="2"/></g>
+<!-- Reunion-style tower, the one DFW silhouette people recognise -->
+<g class="far" opacity=".5" transform="translate(690,0)">
+  <rect x="20" y="300" width="16" height="266"/>
+  <circle cx="28" cy="292" r="30"/>
+</g>
+<!-- nearer blocks -->
+<g opacity=".3"><rect class="near" x="180" y="487" width="84" height="85" rx="2"/><rect class="near" x="213" y="475" width="19" height="14"/><rect class="near" x="271" y="418" width="84" height="154" rx="2"/><rect class="near" x="308" y="406" width="10" height="14"/><rect class="near" x="361" y="393" width="38" height="179" rx="2"/><rect class="near" x="417" y="485" width="58" height="87" rx="2"/><rect class="near" x="486" y="399" width="84" height="173" rx="2"/><rect class="near" x="579" y="463" width="70" height="109" rx="2"/><rect class="near" x="603" y="451" width="22" height="14"/><rect class="near" x="661" y="456" width="84" height="116" rx="2"/><rect class="near" x="757" y="435" width="58" height="137" rx="2"/><rect class="near" x="824" y="386" width="70" height="186" rx="2"/><rect class="near" x="912" y="430" width="58" height="142" rx="2"/><rect class="near" x="986" y="405" width="70" height="167" rx="2"/><rect class="near" x="1075" y="412" width="38" height="160" rx="2"/><rect class="near" x="1123" y="419" width="48" height="153" rx="2"/></g>
+
+<!-- treeline haze -->
+<rect y="520" width="1600" height="56" fill="#DCE6DC" opacity=".55"/>
+
+<!-- ground -->
+<rect y="566" width="1600" height="194" fill="url(#ground)"/>
+<rect y="566" width="1600" height="5" fill="#AEB6AE"/>
+
+<g transform="translate(772,392) scale(0.97)">
+  <!-- dump trailer -->
+  <path class="rig-dark" d="M470 92h330v96H470z"/>
+  <path class="rig-rib" d="M512 100v80M560 100v80M608 100v80M656 100v80M704 100v80M752 100v80"/>
+  <path class="rig-dark" d="M466 86h338v12H466z"/>           <!-- top rail -->
+  <path class="rig-dark" d="M470 188h330v16H470z"/>           <!-- frame rail -->
+  <path class="rig-dark" d="M440 150h34v14h-34z"/>            <!-- tongue -->
+  <path class="rig-dark" d="M452 150h8v40h-8z"/>              <!-- jack -->
+  <!-- load heaped over the walls -->
+  <path class="rig-load" d="M486 86 516 52l24 22 22-34 26 32 28-20 24 26 30-18 26 26 34-14 22 20z"/>
+  <!-- tandem fenders -->
+  <path class="rig-dark" d="M520 204c0-30 24-54 54-54s54 24 54 54h-18c0-20-16-36-36-36s-36 16-36 36z"/>
+  <path class="rig-dark" d="M640 204c0-30 24-54 54-54s54 24 54 54h-18c0-20-16-36-36-36s-36 16-36 36z"/>
+  <!-- pickup -->
+  <path class="rig-dark" d="M12 204v-44l10-14 34-10 52-4 44-54 118-4 14 62 136 2v66z"/>
+  <path class="rig-glass" d="M118 78h52l-2 42h-82z"/>
+  <path class="rig-glass" d="M186 78h78l8 42h-88z"/>
+  <path class="rig-dark" d="M4 150h16v26H4z"/>
+  <!-- wheels: tyre, then rim -->
+  <circle class="rig-tyre" cx="86" cy="204" r="42"/><circle class="rig-rim" cx="86" cy="204" r="19"/>
+  <circle class="rig-tyre" cx="356" cy="204" r="42"/><circle class="rig-rim" cx="356" cy="204" r="19"/>
+  <circle class="rig-tyre" cx="574" cy="204" r="42"/><circle class="rig-rim" cx="574" cy="204" r="19"/>
+  <circle class="rig-tyre" cx="694" cy="204" r="42"/><circle class="rig-rim" cx="694" cy="204" r="19"/>
+</g>
+
+<!-- contact shadow under the rig -->
+<ellipse cx="1230" cy="636" rx="450" ry="17" fill="#8F978F" opacity=".36"/>
+</svg>
